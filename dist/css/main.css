@@ -7,9 +7,13 @@ a {
 .hero-body {
   padding: 0 !important; }
 
+a.logo {
+  width: 80px;
+  padding: 0 12px; }
+
 img.logo {
-  width: 70px;
-  height: auto; }
+  width: 100%;
+  height: 100%; }
 
 .columns {
   width: 100vw;
