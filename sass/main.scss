@@ -12,33 +12,58 @@ a {
 
 .navbar {
     height: 8vh;
+    
+        
+    img.logo {
+        height: 60px;
+        width: 60px;
+    }
 }
 
 .hero-body {
     padding: 0 !important;
 }
 
-a.logo {
-    width: 80px;
-    padding: 0 12px;
-}
-img.logo {
-    width: 100%;
-    height: 100%;
-}
+@media screen
+and (min-width: 1080px) {
 
-.columns {
-    width: 100vw;
-    height: 92vh;
-
-    .column {
-        padding: 0;
+    .columns {
+        width: 100vw;
+        height: 92vh;
+    
+        .column {
+            padding: 0;
+        }
     }
 }
 
 iframe {
     width: 100%;
     height: 100%;
+}
+
+@media screen
+and (max-width: 1024px) {
+    html body {
+        overflow: hidden;
+    }
+
+    .columns {
+        flex-direction: column;
+        // height: unset;
+        // .column {
+        //     padding: unset;
+        // }
+
+        iframe {
+            width: 100vw;
+        }
+
+        .column {
+            height: calc((100vh - 8vh)/2);
+            padding: 0 12px;
+        }
+    }
 }
 
 
