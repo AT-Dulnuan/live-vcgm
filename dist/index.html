@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VCGM Live</title>
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -16,7 +22,7 @@
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item logo" href="./">
-                        <img class="logo" src="./logo.png">
+                        <img class="logo" src="./assets/logo.png">
                     </a>
 
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -29,9 +35,11 @@
 
                 <div id="navBarMenu" class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item" href="https://vcgmchurch.org/about" target="_blank">About</a>
-                        <a class="navbar-item" href="https://vcgmchurch.org/sermons" target="_blank">Sermons</a>
-                        <a class="navbar-item" href="https://vcgmchurch.org/contact" target="_blank">Contact</a>
+                        <div class="navbar-item">
+                            <a class="button is-primary is-outlined is-inverted" href="./prayer/" target="_blank">Send a
+                                Prayer
+                                Request</a>
+                        </div>
                     </div>
                 </div>
             </nav>

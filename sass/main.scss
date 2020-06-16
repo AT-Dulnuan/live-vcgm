@@ -5,6 +5,7 @@ $navbar-background-color: $primary !important;
 $navbar-item-color: #FFFFFF;
 $navbar-item-hover-background-color: hsla(0, 0%, 98%, 0.2);
 $navbar-item-hover-color: #FFFFFF;
+$label-color: #FFFFFF;
 
 a {
     transition: all ease-in-out 0.3s;
@@ -12,16 +13,40 @@ a {
 
 .navbar {
     height: 8vh;
-    
+
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
         
     img.logo {
-        height: 60px;
         width: 60px;
+        height: auto;
     }
 }
 
 .hero-body {
     padding: 0 !important;
+}
+
+#prayer {
+    background: linear-gradient(to bottom right, rgba(46,46,46,0.7), rgba(46,46,46,1)), url("../assets/prayer-header.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+
+    .level {
+        height: 100%;
+        width: 100%;
+    }
+
+    label.radio input:focus {
+        color: #FFFFFF;
+    }
+
+    .checkbox, .radio:hover {
+        color: rgba(#FFFFFF, 0.8);;
+    }
 }
 
 @media screen
@@ -42,10 +67,37 @@ iframe {
     height: 100%;
 }
 
+@media only screen and (max-width: 700px) {
+    #prayer {
+        height: 100%;
+
+        .container {
+            padding: 3rem 0;
+        }
+    }
+}
+
 @media screen
 and (max-width: 1024px) {
     html body {
         overflow: hidden;
+    }
+
+    #prayer .level {
+        width: 95%;
+        margin: auto;
+    }
+
+    .navbar-menu {
+        transition: all ease-in-out 0.3s;
+        visibility: hidden;
+        opacity: 0;
+        display: block !important;
+
+        &.is-active {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 
     .columns {
